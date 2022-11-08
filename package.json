@@ -22,9 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --json --outputFile=result.json --testLocationInResults",
-    "eject": "react-scripts eject",
-    "specs": "npx cypress open",
-    "specsConsole": "npx cypress run --component --browser chrome"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -45,25 +43,10 @@
     ]
   },
   "devDependencies": {
-    "@badeball/cypress-configuration": "^4.2.0",
-    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "@cypress/react18": "^1.1.1",
-    "@cypress/webpack-preprocessor": "^5.15.0",
     "@testing-library/cypress": "^8.0.3",
     "@types/moment": "^2.13.0",
-    "cypress": "^10.10.0",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0"
-  },
-  "testFiles": "**/*.{feature,*.test.js}",
-  "stepDefinitions": [
-      "support/step_definitions/*.{js,ts}"
-  ],
-  "cypress-cucumber-preprocessor": {
-      "json": {
-          "enabled": true
-      }
   }
 }
